@@ -166,54 +166,122 @@ h1{font-size:38px;letter-spacing:-1px}
 @media (max-width: 480px) {
   body {
     padding: 8px;
+    overflow-x: hidden;
   }
   .container {
     padding: 0;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
   }
   .card {
     margin: 0;
     width: 100%;
+    max-width: calc(100vw - 16px);
     border-radius: 8px;
+    gap: 14px;
+    overflow: hidden;
   }
   .left, .right {
-    padding: 20px 12px;
+    padding: 20px 14px;
     gap: 16px;
+    min-width: 0;
+    word-wrap: break-word;
   }
   .subtitle {
     font-size: 0.95rem;
+    line-height: 1.4;
   }
   .btn {
-    min-height: 44px;
-    padding: 10px 16px;
+    min-height: 48px;
+    padding: 12px 16px;
     font-size: 1rem;
+    width: 100%;
   }
   .btn.outline {
-    min-height: 44px;
+    min-height: 48px;
   }
   .note {
-    padding: 16px;
+    padding: 18px;
   }
   .note.wide-message {
-    padding: 16px 12px;
-    font-size: 0.95rem;
+    padding: 16px 14px;
+    font-size: 0.98rem;
     line-height: 1.6;
+    max-width: 100%;
   }
   h1 {
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     margin-bottom: 8px;
+    word-break: break-word;
   }
   h2 {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
+    margin-bottom: 12px;
   }
   .note p {
-    font-size: 0.95rem;
+    font-size: 0.96rem;
+    line-height: 1.6;
+    word-break: break-word;
   }
   #flowers3d {
-    min-height: 80px;
-    gap: 4px;
+    min-height: 90px;
+    gap: 6px;
   }
   .flower3d {
     width: 50px;
     height: 50px;
+  }
+}
+
+@media (max-width: 360px) {
+  body {
+    padding: 4px;
+  }
+  .card {
+    gap: 12px;
+    max-width: 100vw;
+  }
+  .left, .right {
+    padding: 16px 10px;
+    gap: 12px;
+  }
+  .subtitle {
+    font-size: 0.9rem;
+  }
+  .btn {
+    min-height: 46px;
+    padding: 11px 14px;
+    font-size: 0.95rem;
+  }
+  .note {
+    padding: 14px;
+  }
+  .note.wide-message {
+    padding: 14px 10px;
+    font-size: 0.93rem;
+  }
+  h1 {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+  }
+  h2 {
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+  }
+  .note p {
+    font-size: 0.92rem;
+  }
+  .signature {
+    font-size: 0.9rem;
+    margin-top: 12px;
+  }
+  #flowers3d {
+    min-height: 70px;
+    gap: 4px;
+  }
+  .flower3d {
+    width: 44px;
+    height: 44px;
   }
 }
