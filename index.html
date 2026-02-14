@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>To My Love</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <div class="card">
+      <div class="left">
+        <svg class="heart-logo" viewBox="0 0 512 512" aria-hidden="true">
+          <path d="M471.7 73.7c-54.5-46.4-136-38.3-186.4 13.7L256 116.7l-29.3-29.4C176.3 35.4 94.9 27.3 40.4 73.7-21.4 133.4 16.4 234 96 307.9L256 472l160-164.1c79.6-73.8 117.4-174.5 15.7-234.2z"/>
+        </svg>
+        <h1>For You</h1>
+        <p class="subtitle">A little page made with all my heart.</p>
+        <button id="revealBtn" class="btn">Open my message</button>
+      </div>
+      <div class="right">
+        <div id="note" class="note hidden wide-message">
+          <h2>Dear Love,</h2>
+          <p id="message">You make every day brighter. Thank you for being you — my sunshine, my best friend, and my favorite person. I love you more than words can say.</p>
+          <p class="signature">— With all my heart</p>
+        </div>
+        <div id="flowers3d"></div>
+      </div>
+    </div>
+  </main>
+
+  <div id="floating-hearts" aria-hidden="true"></div>
+
+  <div class="sides-flowers" aria-hidden="true">
+    <div class="side left" id="sideLeft"></div>
+    <div class="side right" id="sideRight"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Valentine's Day!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body.landing {
+      background: linear-gradient(135deg, #ffe6f0 0%, #fffaf0 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .landing-main {
+      background: rgba(255,255,255,0.95);
+      border-radius: 22px;
+      box-shadow: 0 14px 40px rgba(0,0,0,0.10);
+      padding: 56px 36px 48px 36px;
+      text-align: center;
+      max-width: 420px;
+      position: relative;
+    }
+    .landing-heart {
+      width: 90px; height: 90px;
+      margin-bottom: 18px;
+      fill: #ff5c8a;
+      animation: pulse 1.6s infinite alternate;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.12); }
+    }
+    .landing-title {
+      font-size: 2.3rem;
+      font-weight: 800;
+      color: #b6466a;
+      margin-bottom: 12px;
+    }
+    .landing-sub {
+      font-size: 1.18rem;
+      color: #7a5b6a;
+      margin-bottom: 32px;
+    }
+    .landing-btn {
+      background: #ff5c8a;
+      color: white;
+      border: none;
+      padding: 14px 32px;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 2px 8px #ffb6d5a0;
+      transition: background 0.2s;
+    }
+    .landing-btn:hover {
+      background: #ff3d6b;
+    }
+    @media (max-width: 600px) {
+      .landing-main {
+        max-width: 98vw;
+        width: 98vw;
+        padding: 32px 8px 28px 8px;
+        border-radius: 12px;
+      }
+      .landing-title {
+        font-size: 1.4rem;
+      }
+      .landing-heart {
+        width: 60px; height: 60px;
+      }
+      .landing-btn {
+        font-size: 1rem;
+        padding: 12px 10vw;
+      }
+      .landing-sub {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body class="landing">
+  <main class="landing-main">
+    <svg class="landing-heart" viewBox="0 0 512 512" aria-hidden="true">
+      <path d="M471.7 73.7c-54.5-46.4-136-38.3-186.4 13.7L256 116.7l-29.3-29.4C176.3 35.4 94.9 27.3 40.4 73.7-21.4 133.4 16.4 234 96 307.9L256 472l160-164.1c79.6-73.8 117.4-174.5 15.7-234.2z"/>
+    </svg>
+    <div class="landing-title">Happy Valentine's Day!</div>
+    <div class="landing-sub">A special surprise awaits you.<br>Click below to begin your journey.</div>
+    <button class="landing-btn" onclick="window.location.href='index.html'">Open the Gift</button>
+  </main>
+  <script>
+    // Optional: Redirect to index.html after a delay (uncomment to enable)
+    // setTimeout(() => { window.location.href = 'index.html'; }, 5000);
+  </script>
+</body>
+</html>
