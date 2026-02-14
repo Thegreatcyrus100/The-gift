@@ -100,7 +100,7 @@ h1{font-size:38px;letter-spacing:-1px}
 .sides-flowers .side-heart {
   width: 38px; height: 38px;
   background: linear-gradient(135deg, #ff7aa2 60%, #ff3d6b 100%);
-  clip-path: path('M24 4C24 4 32 0 36 8C40 16 32 28 24 36C16 28 8 16 12 8C16 0 24 4 24 4Z');
+  clip-path: polygon(50% 100%, 0 38%, 0 12%, 12% 0%, 50% 35%, 88% 0%, 100% 12%, 100% 38%);
   box-shadow: 0 2px 8px #ffb6d5a0;
   animation-delay: 2s;
 }
@@ -126,16 +126,20 @@ h1{font-size:38px;letter-spacing:-1px}
     min-width: 0;
   }
   .left, .right {
-    padding: 18px 6px;
+    padding: 24px 16px;
     min-width: 0;
     width: 100%;
     box-sizing: border-box;
   }
+  .btn {
+    min-height: 48px;
+    width: 100%;
+    font-size: 1.01rem;
+  }
   .note.wide-message {
     max-width: 98vw;
     min-width: 0;
-    padding-left: 6px;
-    padding-right: 6px;
+    padding: 20px 12px;
     font-size: 1rem;
     word-break: break-word;
   }
@@ -144,14 +148,72 @@ h1{font-size:38px;letter-spacing:-1px}
     height: 38px;
   }
   h1 {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
+  }
+  h2 {
+    font-size: 1.2rem;
   }
   .signature {
     font-size: 0.95rem;
   }
   #flowers3d {
-    min-height: 70px;
-    gap: 6px;
+    min-height: 100px;
+    gap: 8px;
   }
   .sides-flowers { display: none; }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 8px;
+  }
+  .container {
+    padding: 0;
+  }
+  .card {
+    margin: 0;
+    width: 100%;
+    border-radius: 8px;
+  }
+  .left, .right {
+    padding: 20px 12px;
+    gap: 16px;
+  }
+  .subtitle {
+    font-size: 0.95rem;
+  }
+  .btn {
+    min-height: 44px;
+    padding: 10px 16px;
+    font-size: 1rem;
+  }
+  .btn.outline {
+    min-height: 44px;
+  }
+  .note {
+    padding: 16px;
+  }
+  .note.wide-message {
+    padding: 16px 12px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  h1 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  .note p {
+    font-size: 0.95rem;
+  }
+  #flowers3d {
+    min-height: 80px;
+    gap: 4px;
+  }
+  .flower3d {
+    width: 50px;
+    height: 50px;
+  }
 }
